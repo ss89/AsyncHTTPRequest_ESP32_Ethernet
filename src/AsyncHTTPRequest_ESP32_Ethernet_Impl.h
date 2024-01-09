@@ -1335,7 +1335,7 @@ bool   AsyncHTTPRequest::_buildRequest()
   while (hdr)
   {
     _request->write(hdr->name);
-    _request->write(':');
+    _request->write(": ");
     _request->write(hdr->value);
     _request->write("\r\n");
 
